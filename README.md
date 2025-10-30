@@ -1,9 +1,9 @@
-# 🎓 Personal Management System (JavaFX + Maven)
+# Personal Management System (JavaFX + Maven)
 
 A simple **JavaFX-based personnel (student) management system**
 demonstrating clean modular architecture with multiple Maven modules.
 
-## 🧩 Project Structure
+## Project Structure
 
     lab1/
     ├── lanceur/                  # Launcher module (entry point)
@@ -11,7 +11,7 @@ demonstrating clean modular architecture with multiple Maven modules.
     ├── gestionnaire-du-personnel/ # Logic and persistence layer
     └── user-interface/           # JavaFX GUI module
 
-## 🚀 Features
+##  Features
 
 -   Manage students: add, list, and persist data.
 -   Data is serialized into `students.ser`.
@@ -19,14 +19,14 @@ demonstrating clean modular architecture with multiple Maven modules.
 -   Modular design using **Maven multi-module structure**.
 -   Fully functional with Java 17+.
 
-## 🛠️ Technologies
+##  Technologies
 
 -   **Java 17**
 -   **JavaFX**
 -   **Maven**
 -   **JUnit 5** (for tests)
 
-## ⚙️ Run Instructions
+##  Run Instructions
 
 ### 1. Compile all modules
 
@@ -41,7 +41,7 @@ cd user-interface
 mvn javafx:run
 ```
 
-## 📦 Maven Setup
+##  Maven Setup
 
 Each module is managed in the root `pom.xml` with the following key
 modules:
@@ -51,7 +51,7 @@ modules:
     persistence.
 -   `user-interface` → JavaFX GUI for interacting with the system.
 
-## 🧠 Example Class: Student
+##  Example Class: Student
 
 ``` java
 public class Student implements Serializable {
@@ -62,7 +62,7 @@ public class Student implements Serializable {
 }
 ```
 
-## 💾 Data Persistence
+##  Data Persistence
 
 Data is stored in `students.ser` using Java's built-in serialization:
 
@@ -71,13 +71,13 @@ ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(DATA_FILE))
 oos.writeObject(students);
 ```
 
-## 🧰 Development Notes
+##  Development Notes
 
 -   Ensure `Student` implements `Serializable`.
 -   Run from `user-interface` to see the GUI.
 -   Each new student is automatically persisted.
 
-## 📸 GUI Preview (Example)
+##  GUI Preview (Example)
 
 A minimal UI with a list view and "Add Student" dialog:
 
@@ -85,7 +85,7 @@ A minimal UI with a list view and "Add Student" dialog:
 -   Allows adding new ones via form fields.
 -   Automatically updates the list after saving.
 
-## 🧪 Future Improvements
+##  Future Improvements
 
 -   Edit & delete student functionality.
 -   Validation and error handling.
@@ -94,6 +94,6 @@ A minimal UI with a list view and "Add Student" dialog:
 
 ------------------------------------------------------------------------
 
-📘 **Author:** [Akram Fadel](https://akramfadel.netlify.app)
-📅 **Version:** 1.0\
-🧱 **License:** Apache-2.0 
+**Author:** [Akram Fadel](https://akramfadel.netlify.app)
+**Version:** 1.0\
+**License:** Apache-2.0 
