@@ -18,31 +18,16 @@ public class Student implements Serializable  {
         this.major = major;
         this.year = year;
     }
-    public String getName() {
-        return name;
-    }
-    public int getId() {
-        return id;
-    }
-    public String getMajor() {
-        return major;
-    }
-    public int getYear() {
-        return year;
-    }
+    
+    public String getName() {return name;}
+    public int getId() {return id;}
+    public String getMajor() {return major;}
+    public int getYear() {return year;}
 
-    public void setName(String name) {
-        this.name = name;
-    }
-    public void setId(int id) {
-        this.id = id;
-    }
-    public void setMajor(String major) {
-        this.major = major;
-    }
-    public void setYear(int year) {
-        this.year = year;
-    }
+    public void setName(String name) {this.name = name;}
+    public void setId(int id) {this.id = id;}
+    public void setMajor(String major) {this.major = major;}
+    public void setYear(int year) {this.year = year;}
 
     @Override
     public String toString() {

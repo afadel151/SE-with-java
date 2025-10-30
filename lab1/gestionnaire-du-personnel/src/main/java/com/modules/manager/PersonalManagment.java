@@ -20,14 +20,12 @@ public class PersonalManagment {
         Student student = new Student("Akram", 1,"Computer Science", 2);
         System.out.println(student);
     }
-
     public List<Student> getAllStudents() {
         return new ArrayList<>(students.values()); 
     }
     public Student chercherEtudiant(int id) {
         return students.get(id);
     }
-    
     public boolean ajouterEtudiant(Student student) {
         try {
             students.put(student.getId(), student);
@@ -36,7 +34,6 @@ public class PersonalManagment {
             return false;
         }
         return true;
-
     }
     public boolean ajouterEtudiant(String name, int id, String major, int year) {
         Student student = new Student(name, id, major, year);
@@ -50,7 +47,6 @@ public class PersonalManagment {
         }
         
     }
-
     public void retrieveEtudiants() {
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(DATA_FILE))) {
             @SuppressWarnings("unchecked")
