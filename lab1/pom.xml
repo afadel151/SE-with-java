@@ -38,8 +38,8 @@
   <build>
     <pluginManagement>
       <!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
-      <plugins>
-        <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
+        <plugins>
+          <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.4.0</version>
@@ -89,10 +89,10 @@
       </plugins>
     </pluginManagement>
   </build>
-  
   <modules>
     <module>lanceur</module>
     <module>personnel-entities</module>
     <module>gestionnaire-du-personnel</module>
+    <module>user-interface</module>
   </modules>
 </project>
